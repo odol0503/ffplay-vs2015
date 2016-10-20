@@ -62,10 +62,12 @@
 #include <sys/resource.h>
 #endif
 
+#ifdef _WIN32
 #include <Windows.h>
 #include <Winbase.h>
 
 #pragma warning(disable:4996)
+#endif
 
 static int init_report(const char *env);
 

@@ -60,7 +60,9 @@
 
 #include <assert.h>
 
+#ifdef _WIN32
 #pragma warning(disable:4996)
+#endif
 
 const char program_name[] = "ffplay";
 const int program_birth_year = 2003;
